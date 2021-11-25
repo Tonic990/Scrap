@@ -22,7 +22,7 @@ __For any other bots, ask the respective bot developers, for the source code, be
 
 #### The Easy Way
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Tonic990/Scrap)
 
 
 #### The Legacy Way
@@ -80,4 +80,4 @@ check out the [helper_funcs](https://github.com/mrismanaziz/Scrap-Man/tree/maste
   - [requests](https://github.com/psf/requests)
   - [beautifulsoup4](https://pypi.org/project/beautifulsoup4)
 - Thanks to:
-  - [me](https://tx.me/mrismanaziz)
+  - [me](https://tx.me/Bukan_guudlooking)
