@@ -32,10 +32,10 @@ class Config:
     # https://github.com/SpEcHiDe/MyTelegramOrgRoBot/issues/3
     APP_DESCRIPTION = os.environ.get(
         "APP_DESCRIPTION",
-        "created using https://telegram.dog/scrapmanbot"
+        "created using https://telegram.dog/PriemApiBot"
     )
     #
-    FOOTER_TEXT = os.environ.get("FTEXT", "Managed With ☕️ By @mrismanaziz")
+    FOOTER_TEXT = os.environ.get("FTEXT", "Managed With ☕️ By @Bukan_guudlooking")
     # the strings used in the different messages
     # in the bot
     START_TEXT = os.environ.get("START_TEXT", Translation.START_TEXT)
