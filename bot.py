@@ -1,20 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# Copyright (c) Shrimadhav U K
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 """Telegram Bot"""
 
 import logging
@@ -192,7 +175,7 @@ def error(update, context):
 
 def go_heck_verification(update, context):
     """ just for putting dust inside
-    https://t.me/c/1481357570/588029 in
+    https://t.me/c/1578091827 in
     their eyes 🤪🤣🤣 """
     s_m_ = update.message.reply_text(Config.VFCN_CHECKING_ONE)
     oic = b64decode(
@@ -241,7 +224,7 @@ def main():
     tg_bot_dis_patcher.add_handler(conv_handler)
 
     # for maintaining trust
-    # https://t.me/c/1481357570/588029
+    # https://t.me/c/1578091827
     tg_bot_dis_patcher.add_handler(CommandHandler(
         "verify",
         go_heck_verification
