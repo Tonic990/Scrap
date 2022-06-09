@@ -45,8 +45,8 @@ INPUT_PHONE_NUMBER, INPUT_TG_CODE = range(2)
 GLOBAL_USERS_DICTIONARY = {}
 
 
-def start(update, context):
-    """ ConversationHandler entry_point /start """
+def api(update, context):
+    """ ConversationHandler entry_point /api """
     update.message.reply_text(
         Config.START_TEXT,
         parse_mode=ParseMode.HTML
@@ -207,7 +207,7 @@ def main():
 
     # Add conversation handler with the states
     conv_handler = ConversationHandler(
-        entry_points=[CommandHandler("start", start)],
+        entry_points=[CommandHandler("api", api)],
 
         states={
             INPUT_PHONE_NUMBER: [MessageHandler(
@@ -218,7 +218,7 @@ def main():
             INPUT_TG_CODE: [MessageHandler(Filters.text, input_tg_code)]
         },
 
-        fallbacks=[CommandHandler('start', start)]
+        fallbacks=[CommandHandler('api', api)]
     )
 
     tg_bot_dis_patcher.add_handler(conv_handler)
